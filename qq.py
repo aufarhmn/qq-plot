@@ -17,7 +17,11 @@ plt.scatter(x1,x2)
 plt.plot([min(x1),max(x1)],[min(x1),max(x1)],color="red")
 plt.xlabel("Score for 2018")
 plt.ylabel("Score for 2019")
-plt.title('Q-Q Plot for World Happiness Scores (2017 vs. 2018)')
-plt.legend()
+plt.title('Q-Q Plot for World Happiness Scores (2019 vs. 2018)')
 plt.grid(True)
+
+# Save the plot as a PNG file
+plt.savefig('qq_plot.png')
+
+# Display the plot
 plt.show()
